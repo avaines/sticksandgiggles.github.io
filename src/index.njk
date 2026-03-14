@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ site.siteName }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="eyebrow">{{ site.collabLabel }}</p>
+        <h1 class="site-title">{{ site.siteName }}</h1>
+        <p class="tagline">{{ site.tagline }}</p>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="shows-section">
+        <div class="container">
+          <p class="section-label">Upcoming shows</p>
+          {% if site.shows and site.shows.length %}
+            <div class="shows-list">
+              {% for show in site.shows %}
+                {% set showTone = show.tone or "mixed" %}
+                <article class="show-card tone-{{ showTone }}">
+                  <div class="show-card-body">
+                    <p class="show-date">{{ show.date }}</p>
+                    <h2 class="show-name">{{ show.name }}</h2>
+                    <p class="show-location">{{ show.location }}</p>
+                    {% if show.note %}<p class="show-note">{{ show.note }}</p>{% endif %}
+                  </div>
+                  {% if show.url %}
+                    <a class="show-btn" href="{{ show.url }}" target="_blank" rel="noopener noreferrer">
+                      {{ show.buttonLabel or "Find out more" }} →
+                    </a>
+                  {% endif %}
+                </article>
+              {% endfor %}
+            </div>
+          {% else %}
+            <p class="shows-empty">Show dates coming soon — watch this space.</p>
+          {% endif %}
+        </div>
+      </section>
+
+      <section class="links-section">
+        <div class="container container--narrow">
+          <p class="section-label">Find us online</p>
+          <div class="links-list">
+            {% for link in site.links %}
+              {% set linkTone = link.tone or "mixed" %}
+              <a class="link-btn tone-{{ linkTone }}" href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                <span class="link-btn-text">
+                  <span class="link-btn-label">{{ link.label }}</span>
+                  {% if link.description %}<span class="link-btn-desc">{{ link.description }}</span>{% endif %}
+                </span>
+                <span class="link-btn-arrow" aria-hidden="true">→</span>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="brands-section">
+        <div class="container">
+          <p class="section-label">The collab</p>
+          <div class="brands-grid">
+            {% for brand in site.brands %}
+              {% set brandTone = brand.tone or "mixed" %}
+              <article class="brand-card tone-{{ brandTone }}">
+                <h3 class="brand-name">{{ brand.name }}</h3>
+                <p class="brand-desc">{{ brand.description }}</p>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>© {{ build.year }} {{ site.footerText }}</p>
+    </footer>
+
+  </body>
+</html>

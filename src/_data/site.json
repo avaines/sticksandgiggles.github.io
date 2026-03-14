@@ -1,0 +1,56 @@
+{
+  "siteName": "Sticks and Giggles",
+  "collabLabel": "A Vaines Collab Project",
+  "tagline": "'Bits and Bobyns' and 'The Yorkshire Garage' at craft shows in the local area.",
+  "description": "A link-in-bio style page for Sticks and Giggles: craft fairs, handmade sewn goods, and turned wooden work.",
+  "footerText": "© 2026 Sticks and Giggles",
+  "brands": [
+    {
+      "name": "Bits and Bobyns",
+      "description": "Handmade goodies lovingly crafted from bits and bob(yn)s, by Robyn.",
+      "tone": "sewn"
+    },
+    {
+      "name": "The Yorkshire Garage",
+      "description": "Stuff from my garage. Mostly pens and bowls, sometimes little mince, sometimes and other things",
+      "tone": "wood"
+    }
+  ],
+  "shows": [
+    {
+      "name": "Oakwell Hall Makers Market 2026",
+      "date": "30 August 2026",
+      "location": "Oakwell Hall, Gomersal",
+      "note": "",
+      "url": "https://www.facebook.com/OakwellHall",
+      "buttonLabel": "Find out More",
+      "tone": "mixed"
+    }
+  ],
+  "links": [
+    {
+      "label": "Sticks and Giggles Instagram",
+      "description": "Photos, updates and show announcements",
+      "url": "https://www.instagram.com/sticksandgiggles/",
+      "tone": "mixed"
+    },
+    {
+      "label": "Bits and Bobyns on Instagram",
+      "description": "Follow me on Instagram",
+      "url": "https://www.instagram.com/bitsandbobyns/",
+      "tone": "sewn"
+    },
+    {
+      "label": "The Yorkshire Garage Store",
+      "description": "Buy my stuff without having to interact with me",
+      "url": "https://shop.vaines.org",
+      "tone": "wood"
+    },
+    {
+      "label": "The Yorkshire Garage On Instagram",
+      "description": "Follow me on Instagram",
+      "url": "https://www.instagram.com/aidensgotwood/",
+      "tone": "wood"
+    }
+  ]
+}
