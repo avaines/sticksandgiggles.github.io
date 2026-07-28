@@ -31,6 +31,16 @@ The generated site is written to `_site/`.
 
 Codespaces will forward port `8080` and open the website preview. Dependencies are installed automatically when the codespace is first created.
 
+### Pre-commit checks
+
+The Codespaces setup installs pre-commit and enables the repository's hooks automatically. The checks will run whenever you make a commit.
+
+To check every file manually, run:
+
+```bash
+pre-commit run --all-files
+```
+
 ## Everyday content
 
 Most shared content lives in `src/_data/site.json`, including:
