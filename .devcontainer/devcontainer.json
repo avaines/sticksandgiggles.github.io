@@ -1,6 +1,6 @@
 {
   "name": "Sticks & Giggles",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22-bookworm",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
       "version": "3.12",
