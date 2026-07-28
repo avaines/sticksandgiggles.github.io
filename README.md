@@ -17,6 +17,20 @@ npm run build
 
 The generated site is written to `_site/`.
 
+## GitHub Codespaces
+
+1. Open the repository on GitHub.
+2. Select **Code**, then **Codespaces**.
+3. Create a codespace on the `main` branch.
+4. Wait for the container to finish setting up.
+5. In the Codespaces terminal, run:
+
+   ```bash
+   npm run dev
+   ```
+
+Codespaces will forward port `8080` and open the website preview. Dependencies are installed automatically when the codespace is first created.
+
 ## Everyday content
 
 Most shared content lives in `src/_data/site.json`, including:

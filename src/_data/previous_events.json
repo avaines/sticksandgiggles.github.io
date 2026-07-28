@@ -1,13 +1,13 @@
 [
-    {
-        "name": "Oakwell Hall Makers Market 2026",
-        "date": "30 August 2026",
-        "dateShort": "30 Aug",
-        "year": "2026",
-        "location": "Oakwell Hall, Gomersal",
-        "note": "Both of us will be there with our sewn and turned work.",
-        "url": "https://www.facebook.com/OakwellHall",
-        "buttonLabel": "Event details",
-        "tone": "mixed"
-    }
+  {
+    "buttonLabel": "Event details",
+    "date": "30 August 2026",
+    "dateShort": "30 Aug",
+    "location": "Oakwell Hall, Gomersal",
+    "name": "Oakwell Hall Makers Market 2026",
+    "note": "Both of us will be there with our sewn and turned work.",
+    "tone": "mixed",
+    "url": "https://www.facebook.com/OakwellHall",
+    "year": "2026"
+  }
 ]
