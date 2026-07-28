@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: Upcoming shows
+navKey: Shows
+description: Find Sticks & Giggles at upcoming craft fairs and makers' markets.
+permalink: /shows/index.html
+---
+<header class="page-hero page-hero--dark">
+  <div class="shell">
+    <p class="eyebrow eyebrow--light">Upcoming shows</p>
+    <h1>Where to find us.</h1>
+    <p>Our confirmed market dates are listed below.</p>
+  </div>
+</header>
+
+<section class="shows-page section">
+  <div class="shell">
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">Coming up</p>
+        <h2>Dates for the diary.</h2>
+      </div>
+      <p class="section-summary">Show dates are updated here as soon as they are confirmed.</p>
+    </div>
+
+    {% if site.shows and site.shows.length %}
+      <div class="shows-list">
+        {% for show in site.shows %}
+          <article class="show-listing">
+            <div class="show-listing-date">
+              <strong>{{ show.dateShort }}</strong>
+              <span>{{ show.year }}</span>
+            </div>
+            <div class="show-listing-copy">
+              <p>{{ show.location }}</p>
+              <h3>{{ show.name }}</h3>
+              {% if show.note %}<p class="show-listing-note">{{ show.note }}</p>{% endif %}
+            </div>
+            {% if show.url %}
+              <a class="button button--dark" href="{{ show.url }}" target="_blank" rel="noopener noreferrer">{{ show.buttonLabel }}</a>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="empty-state empty-state--light">No dates are confirmed just yet. Follow us on Instagram for announcements.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="contact-band contact-band--dark">
+  <div class="shell contact-band-inner">
+    <div>
+      <p class="eyebrow eyebrow--light">Planning an event?</p>
+      <h2>Would you like us to take part?</h2>
+    </div>
+    <a class="button button--pink" href="mailto:{{ site.email }}">Invite Sticks &amp; Giggles</a>
+  </div>
+</section>

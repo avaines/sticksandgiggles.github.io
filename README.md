@@ -1,56 +1,48 @@
-# Sticks and Giggles website
+# Sticks & Giggles website
 
-Simple Eleventy landing page for **Sticks and Giggles**.
-
-## What it does
-
-- Static site build (works with GitHub Pages)
-- Link-in-bio style buttons
-- Large show banners at the top
-- Content driven by one JSON file: `src/_data/site.json`
+An Eleventy site for the Sticks & Giggles collaboration between Bits and Bobyns and The Yorkshire Garage.
 
 ## Local development
 
-1. Install dependencies:
+```bash
+npm install
+npm run dev
+```
 
-   ```bash
-   npm install
-   ```
+Create the production site with:
 
-2. Run locally:
+```bash
+npm run build
+```
 
-   ```bash
-   npm run dev
-   ```
+The generated site is written to `_site/`.
 
-3. Build static output:
+## Everyday content
 
-   ```bash
-   npm run build
-   ```
+Most shared content lives in `src/_data/site.json`, including:
 
-Output is generated in `_site/`.
+- contact details and navigation
+- homepage introduction and hero
+- both maker profiles
+- featured work
+- upcoming shows
+- social accounts
+- gallery event descriptions
 
-## Editing content
+### Adding a gallery event
 
-Update this file:
+1. Add a directory under `src/assets/gallery/`, for example `202608_oakwell`.
+2. Put that event's image files in the directory.
+3. Add one matching entry to `galleryEvents` in `src/_data/site.json`.
 
-- `src/_data/site.json`
+The build discovers every image in the directory automatically. `cover` can name the photograph used to represent the event. Per-image descriptions can optionally be added with an `imageAlts` object.
 
-You can edit:
+### Adding a journal article
 
-- Show banners (`shows`)
-- Link buttons (`links`)
-- Brand text (`brands`)
-- Hero/footer text
+Add a Markdown file under `src/journal/` using `first-look.md` as the structural example. Give it the `journal` tag so it appears on the Journal page.
 
-## GitHub Pages
+The included first-look article is deliberately marked as placeholder copy and should be replaced when the real story is ready.
 
-- Workflow file: `.github/workflows/deploy.yml`
-- Custom domain file: `src/CNAME` (currently `sticksandgiggles.uk`)
+## Deployment
 
-After first push, in GitHub repo settings:
-
-1. Open **Settings → Pages**
-2. Set source to **GitHub Actions**
-3. Ensure DNS records for `sticksandgiggles.uk` point to GitHub Pages
+Pushing to `main` deploys the generated site to GitHub Pages. The custom domain is configured by `src/CNAME`.

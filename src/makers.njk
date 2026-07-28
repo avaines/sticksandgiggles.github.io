@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Our makers
+navKey: Our makers
+description: Meet the two independent makers behind Sticks & Giggles.
+permalink: /makers/index.html
+---
+<header class="page-hero page-hero--split">
+  <div class="shell">
+    <p class="eyebrow">Our makers</p>
+    <h1>Meet the people behind<br />Sticks &amp; Giggles.</h1>
+    <p>Sticks &amp; Giggles is the name we use when Bits and Bobyns and The Yorkshire Garage attend markets together.</p>
+  </div>
+</header>
+
+<section class="makers-detail section">
+  <div class="shell">
+    {% for brand in site.brands %}
+      <article class="maker-profile maker-profile--{{ brand.panelTone }}" id="{{ brand.name | slugify }}">
+        <div class="maker-profile-image">
+          <img src="{{ brand.image }}" alt="{{ brand.name }} handmade work" />
+        </div>
+        <div class="maker-profile-copy">
+          <p class="eyebrow">{{ brand.kicker }}</p>
+          <h2>{{ brand.name }}</h2>
+          <p>{{ brand.description }}</p>
+          {% if brand.tone == "sewn" %}
+            <p>Robyn works with colourful fabrics and embroidery. Her range includes useful things for the home as well as small characters and seasonal decorations.</p>
+          {% else %}
+            <p>Aiden works with the grain and shape of each piece of timber. Knots and natural variation stay visible in the finished work.</p>
+          {% endif %}
+          <a class="button {% if brand.panelTone == 'dark' %}button--pink{% else %}button--dark{% endif %}" href="{{ brand.url }}" target="_blank" rel="noopener noreferrer">{{ brand.buttonLabel }}</a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="contact-band">
+  <div class="shell contact-band-inner">
+    <div>
+      <p class="eyebrow">Our shared stall</p>
+      <h2>See the two ranges together.</h2>
+    </div>
+    <a class="button button--dark" href="/gallery/">Explore the gallery</a>
+  </div>
+</section>

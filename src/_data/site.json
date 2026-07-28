@@ -1,56 +1,152 @@
 {
-  "siteName": "Sticks and Giggles",
-  "collabLabel": "A Vaines Collab Project",
-  "tagline": "'Bits and Bobyns' and 'The Yorkshire Garage' at craft shows in the local area.",
-  "description": "A link-in-bio style page for Sticks and Giggles: craft fairs, handmade sewn goods, and turned wooden work.",
-  "footerText": "© 2026 Sticks and Giggles",
+  "siteName": "Sticks & Giggles",
+  "shortName": "S&G",
+  "collabLabel": "Two West Yorkshire makers",
+  "siteUrl": "https://sticksandgiggles.uk",
+  "description": "Sewn goods by Bits and Bobyns and turned wood by The Yorkshire Garage, sold together as Sticks & Giggles.",
+  "email": "info@sticksandgiggles.uk",
+  "location": "West Yorkshire",
+  "footerText": "Sticks & Giggles",
+  "navigation": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Our makers",
+      "url": "/makers/"
+    },
+    {
+      "label": "Gallery",
+      "url": "/gallery/"
+    },
+    {
+      "label": "Shows",
+      "url": "/shows/"
+    },
+    {
+      "label": "Journal",
+      "url": "/journal/"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Sewn goods and turned wood",
+    "title": "Made in West Yorkshire by two independent crafters.",
+    "intro": "Sticks & Giggles is the shared stall of Bits and Bobyns and The Yorkshire Garage. Robyn works with fabric and Aiden turns wood.",
+    "image": "/assets/gallery/202607_demo/C5E8A21E-AE77-4D37-AB9E-2E585DD01549_1_105_c.jpeg",
+    "primaryAction": {
+      "label": "Explore our work",
+      "url": "#featured-work"
+    },
+    "secondaryAction": {
+      "label": "Find us at a show",
+      "url": "/shows/"
+    }
+  },
+  "introduction": {
+    "eyebrow": "About us",
+    "title": "Two makers sharing one stall.",
+    "body": "Robyn makes sewn goods as Bits and Bobyns. Aiden makes turned wooden pieces in The Yorkshire Garage. We set up Sticks & Giggles so we could take both ranges to markets together. The dark wood and colourful fabrics look good side by side, so we let each bring out the best in the other."
+  },
   "brands": [
     {
       "name": "Bits and Bobyns",
-      "description": "Handmade goodies lovingly crafted from bits and bob(yn)s, by Robyn.",
-      "tone": "sewn"
+      "kicker": "Sewn by Robyn",
+      "description": "Robyn makes cushions, plushies, tea towels and decorations under the name Bits and Bobyns.",
+      "tone": "sewn",
+      "panelTone": "dark",
+      "image": "/assets/gallery/202607_demo/30D370B4-AB71-4213-BAA2-3FF086FEC686_1_105_c.jpeg",
+      "url": "https://www.instagram.com/bitsandbobyns/",
+      "buttonLabel": "Follow Bits and Bobyns"
     },
     {
       "name": "The Yorkshire Garage",
-      "description": "Stuff from my garage. Mostly pens and bowls, sometimes little mince, sometimes and other things",
-      "tone": "wood"
+      "kicker": "Turned by Aiden",
+      "description": "Aiden turns pens, bowls and other useful wooden pieces in his Yorkshire garage.",
+      "tone": "wood",
+      "panelTone": "pink",
+      "image": "/assets/gallery/202607_demo/421BD7F9-98EC-4450-83DD-260B3C42B8A4_1_105_c.jpeg",
+      "url": "https://www.instagram.com/aidensgotwood/",
+      "buttonLabel": "Visit the Yorkshire Garage"
+    }
+  ],
+  "featuredWork": [
+    {
+      "title": "Turned bowls",
+      "category": "The Yorkshire Garage",
+      "image": "/assets/gallery/202607_demo/4F092D0D-54F1-4E6E-A46A-60EAF392F3C9_1_105_c.jpeg",
+      "tone": "pink",
+      "size": "large"
+    },
+    {
+      "title": "Stitched strawberries",
+      "category": "Bits and Bobyns",
+      "image": "/assets/gallery/202607_demo/30D370B4-AB71-4213-BAA2-3FF086FEC686_1_105_c.jpeg",
+      "tone": "dark",
+      "size": "standard"
+    },
+    {
+      "title": "Turned pens",
+      "category": "The Yorkshire Garage",
+      "image": "/assets/gallery/202607_demo/301210BE-CFF6-4994-962F-749FFD68BAE2_1_105_c.jpeg",
+      "tone": "pink",
+      "size": "standard"
+    },
+    {
+      "title": "Fabric pumpkins",
+      "category": "Bits and Bobyns",
+      "image": "/assets/gallery/202607_demo/0172551B-0BE7-4D0E-880F-A143C7CD3FC2_1_105_c.jpeg",
+      "tone": "dark",
+      "size": "large"
     }
   ],
   "shows": [
     {
       "name": "Oakwell Hall Makers Market 2026",
       "date": "30 August 2026",
+      "dateShort": "30 Aug",
+      "year": "2026",
       "location": "Oakwell Hall, Gomersal",
-      "note": "",
+      "note": "Both of us will be there with our sewn and turned work.",
       "url": "https://www.facebook.com/OakwellHall",
-      "buttonLabel": "Find out More",
+      "buttonLabel": "Event details",
       "tone": "mixed"
     }
   ],
-  "links": [
+  "socials": [
     {
-      "label": "Sticks and Giggles Instagram",
-      "description": "Photos, updates and show announcements",
+      "label": "Sticks & Giggles",
+      "handle": "@sticksandgiggles",
+      "description": "Updates from the shared stall and details of upcoming shows.",
       "url": "https://www.instagram.com/sticksandgiggles/",
       "tone": "mixed"
     },
     {
-      "label": "Bits and Bobyns on Instagram",
-      "description": "Follow me on Instagram",
+      "label": "Bits and Bobyns",
+      "handle": "@bitsandbobyns",
+      "description": "Robyn's sewn work and current projects.",
       "url": "https://www.instagram.com/bitsandbobyns/",
       "tone": "sewn"
     },
     {
-      "label": "The Yorkshire Garage Store",
-      "description": "Buy my stuff without having to interact with me",
-      "url": "https://shop.vaines.org",
-      "tone": "wood"
-    },
-    {
-      "label": "The Yorkshire Garage On Instagram",
-      "description": "Follow me on Instagram",
+      "label": "The Yorkshire Garage",
+      "handle": "@aidensgotwood",
+      "description": "Aiden's woodturning and work in progress.",
       "url": "https://www.instagram.com/aidensgotwood/",
       "tone": "wood"
+    }
+  ],
+  "galleryEvents": [
+    {
+      "folder": "202607_demo",
+      "title": "Trying out our first market stall",
+      "date": "July 2026",
+      "sortDate": "2026-07-01",
+      "location": "West Yorkshire",
+      "type": "Behind the scenes",
+      "summary": "Before our first market, we set up a trial stall to see how the two ranges worked together and work out what stock we still needed.",
+      "cover": "26238D13-3AFB-4835-8054-BB2E54503B3C_1_105_c.jpeg",
+      "featured": true
     }
   ]
 }

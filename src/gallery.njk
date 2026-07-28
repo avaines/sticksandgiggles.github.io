@@ -1,0 +1,73 @@
+---
+layout: base.njk
+title: Gallery
+navKey: Gallery
+description: Shows, displays and behind-the-scenes photographs from Sticks & Giggles.
+permalink: /gallery/index.html
+---
+<header class="page-hero page-hero--pink">
+  <div class="shell">
+    <p class="eyebrow">Shows and stall preparations</p>
+    <h1>Photographs from<br />Sticks &amp; Giggles.</h1>
+    <p>Here you'll find pictures from our stall trials and, once we get started, the markets we attend.</p>
+  </div>
+</header>
+
+<section class="gallery-page section">
+  <div class="shell">
+    {% if gallery and gallery.length %}
+      {% for event in gallery %}
+        <article class="gallery-event">
+          <header class="gallery-event-header">
+            <div>
+              <p class="eyebrow">{{ event.type }}</p>
+              <h2>{{ event.title }}</h2>
+            </div>
+            <div class="gallery-event-details">
+              <p>{{ event.date }}</p>
+              <p>{{ event.location }}</p>
+            </div>
+            <p class="gallery-event-summary">{{ event.summary }}</p>
+          </header>
+
+          <div class="photo-grid">
+            {% for photo in event.images %}
+              <button class="photo-card{% if loop.index == 1 or loop.index == 6 %} photo-card--wide{% endif %}" type="button" data-lightbox-src="{{ photo.src }}" data-lightbox-alt="{{ photo.alt }}">
+                <img src="{{ photo.src }}" alt="{{ photo.alt }}" loading="lazy" />
+                <span class="photo-card-action">View image</span>
+              </button>
+            {% endfor %}
+          </div>
+        </article>
+      {% endfor %}
+    {% else %}
+      <p class="empty-state empty-state--light">Our first gallery is coming soon.</p>
+    {% endif %}
+  </div>
+</section>
+
+<dialog class="lightbox" aria-label="Enlarged gallery image">
+  <button class="lightbox-close" type="button" aria-label="Close image">Close ×</button>
+  <img src="" alt="" />
+</dialog>
+
+<script>
+  const lightbox = document.querySelector(".lightbox");
+  const lightboxImage = lightbox && lightbox.querySelector("img");
+  const lightboxClose = lightbox && lightbox.querySelector(".lightbox-close");
+
+  document.querySelectorAll("[data-lightbox-src]").forEach((button) => {
+    button.addEventListener("click", () => {
+      lightboxImage.src = button.dataset.lightboxSrc;
+      lightboxImage.alt = button.dataset.lightboxAlt;
+      lightbox.showModal();
+    });
+  });
+
+  if (lightboxClose) lightboxClose.addEventListener("click", () => lightbox.close());
+  if (lightbox) {
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) lightbox.close();
+    });
+  }
+</script>
