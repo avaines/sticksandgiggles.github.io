@@ -2,3 +2,14 @@ default: true
 
 # MD013/line-length Line length
 MD013: false
+
+# MD033/no-inline-html
+# Journal photo essays use semantic HTML for figures and summary panels.
+MD033:
+  allowed_elements:
+    - aside
+    - figcaption
+    - figure
+    - img
+    - p
+    - strong

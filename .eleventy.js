@@ -1,5 +1,9 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy("src/journal/**/*.jpeg");
+  eleventyConfig.addPassthroughCopy("src/journal/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/journal/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/journal/**/*.webp");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
 
