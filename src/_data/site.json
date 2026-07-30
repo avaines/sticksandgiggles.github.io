@@ -116,13 +116,6 @@
   "siteUrl": "https://sticksandgiggles.uk",
   "socials": [
     {
-      "description": "Updates from the shared stall and details of upcoming shows.",
-      "handle": "@sticksandgiggles",
-      "label": "Sticks & Giggles",
-      "tone": "mixed",
-      "url": "https://www.instagram.com/sticksandgiggles/"
-    },
-    {
       "description": "Robyn's sewn work and current projects.",
       "handle": "@bitsandbobyns",
       "label": "Bits and Bobyns",
