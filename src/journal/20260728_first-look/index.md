@@ -2,7 +2,8 @@
 layout: post.njk
 title: Trying out our first stall
 description: We set up a trial stall to check the layout and see how much more we need to make.
-displayDate: July 2026
+date: 2026-07-28
+displayDate: 28 July 2026
 author: Sticks & Giggles
 category: Behind the scenes
 placeholder: true
