@@ -6,7 +6,6 @@ date: 2026-07-28
 displayDate: 28 July 2026
 author: Sticks & Giggles
 category: Behind the scenes
-placeholder: true
 image: /assets/gallery/202607_demo/C0E76A39-E96B-4BC6-93AF-0CD46D5B2AB0_1_105_c.jpeg
 imageAlt: The trial Sticks and Giggles market display
 tags:
